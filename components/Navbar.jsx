@@ -94,7 +94,7 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Link href="/">
                 <a>
-                  <Image src={NavLogo} width="87" height="35" alt="/" />
+                  <Image onClick={() => setNav(!nav)} src={NavLogo} width="87" height="35" alt="/" />
                 </a>
               </Link>
               <div
@@ -113,32 +113,27 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(!nav)} className="py-4 text-sm">
                   Home
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(!nav)} className="py-4 text-sm">
                   About
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(!nav)} className="py-4 text-sm">
                   Skills
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(!nav)} className="py-4 text-sm">
                   Projects
                 </li>
               </Link>
-              <Link href="/resume">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Resume
-                </li>
-              </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(!nav)} className="py-4 text-sm">
                   Contact
                 </li>
               </Link>
