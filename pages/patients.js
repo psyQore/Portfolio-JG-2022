@@ -64,7 +64,7 @@ const patients = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back Projects</p>
+          <p className="underline cursor-pointer">← Back Projects</p>
         </Link>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Projects = () => {
   const projectUrlOne = '/patients-manager';
 
   return (
-    <div id="projects" className="w-full">
+    <div id="projects" className="w-full pt-10">
       <div className="max-w-[1240px] mx-auto py-16 px-8">
         <p className="text-xl tracking-widest uppercase text-[#5651e1]">
           Projects

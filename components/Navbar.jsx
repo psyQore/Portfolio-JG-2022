@@ -5,15 +5,29 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import NavLogo from "../public/assets/navLogo.png";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [linkColor, setLinkColor] = useState("#1f2937");
+  const [navBg, setNavBg] = useState("#ecf0f3");
+
+  const router = useRouter();
 
   const handleNav = () => {
     setNav(!nav);
   };
+
+  useEffect(() => {
+    if (router.asPath === "/patients") {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   useEffect(() => {
     const handleShadow = () => {
@@ -28,6 +42,9 @@ const Navbar = () => {
 
   return (
     <div
+      style={{
+        backgroundColor: `${navBg}`,
+      }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -94,7 +111,13 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Link href="/">
                 <a>
-                  <Image onClick={() => setNav(!nav)} src={NavLogo} width="87" height="35" alt="/" />
+                  <Image
+                    onClick={() => setNav(!nav)}
+                    src={NavLogo}
+                    width="87"
+                    height="35"
+                    alt="/"
+                  />
                 </a>
               </Link>
               <div
