@@ -20,6 +20,7 @@ const Projects = () => {
             Project1={Project1}
             title="CryptoApp"
             tech="React"
+            projectUrl={`patients`}
           />
           <ProjectItems Project1={Project1} title="CryptoApp" tech="React" />
           <ProjectItems Project1={Project1} title="CryptoApp" tech="React" />
