@@ -34,7 +34,7 @@ const control = () => {
             The data will be stored in LocalStorage for persistence.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
-            <a href="https://expense-contro-app.netlify.app/" target="_blank" rel="noopener">
+            <a href="https://expense-contro-app.netlify.app/" target="_blank" rel="noreferrer">
               Live Demo
             </a>
           </button>
@@ -42,7 +42,7 @@ const control = () => {
             <a
               href="https://github.com/psyQore/control-expense-app"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               Code
             </a>
