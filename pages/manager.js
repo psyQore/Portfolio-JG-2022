@@ -32,10 +32,10 @@ const manager = () => {
             it is stored in localstorage of the browser.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">
-            <a href="https://manager-patients-app.netlify.app/" target="_blank">Live Demo</a>
+            <a href="https://manager-patients-app.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
           </button>
           <button className="px-8 py-2 mt-4">
-            <a href="https://github.com/psyQore/Patients-Manager" target="_blank">Code</a>
+            <a href="https://github.com/psyQore/Patients-Manager" target="_blank" rel="noreferrer">Code</a>
           </button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
